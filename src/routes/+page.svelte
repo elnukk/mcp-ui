@@ -15,7 +15,7 @@
     csvData = "";
 
     try {
-      const res = await fetch("https://efarm.digitalgreen.org/agri_mcp", {
+      const res = await fetch("https://efarm.digitalgreen.org/agri_mcp/api/run-workflow", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ state: "bihar", district }),
